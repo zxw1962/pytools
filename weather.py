@@ -26,7 +26,7 @@ def utf8tounicode(utf8str):
     # unicode(utf8str, encoding='utf-8')
 
 def getcityidfromname1(name):
-    tree = ET.parse('allcities.xml')
+    tree = ET.parse('/Users/xiaoweiz/pytools/allcities.xml')
     root = tree.getroot()
     counties = root.iter('county')
     for item in counties:
@@ -38,7 +38,7 @@ def getcityidfromname1(name):
 def getcityidfromname(names, cityIds):
     # TODO(xiaoweiz): 有点慢啊,需要优化下啊!!!
     # 看来得搞个city name --> city id 的dict
-    tree = ET.parse('allcities.xml')
+    tree = ET.parse('/Users/xiaoweiz/pytools/allcities.xml')
     root = tree.getroot()
     counties = root.iter('county')
     for item in counties:
