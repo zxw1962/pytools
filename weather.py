@@ -98,6 +98,6 @@ if __name__ == "__main__":
     for value in values:
         print u'%s天气:' % value['city']
         handlerealtime(value['realtime'])
-        handlefuture(value['weathers'])
         handlepm25(value['pm25'])
+        handlefuture(value['weathers'])
         print '---------------------------------------------'
