@@ -5,10 +5,10 @@
     <city id="0101" name="北京">
       <county id="010101" name="北京" weatherCode="101010100"/>
       <county id="010102" name="海淀" weatherCode="101010200"/>
-      <county id="010103" name="朝阳" weatherCode="101010300"/>
+      <county id="010103" name="朝阳区" weatherCode="101010300"/>
       <county id="010104" name="顺义" weatherCode="101010400"/>
       <county id="010105" name="怀柔" weatherCode="101010500"/>
-      <county id="010106" name="通州" weatherCode="101010600"/>
+      <county id="010106" name="通州区" weatherCode="101010600"/>
       <county id="010107" name="昌平" weatherCode="101010700"/>
       <county id="010108" name="延庆" weatherCode="101010800"/>
       <county id="010109" name="丰台" weatherCode="101010900"/>
@@ -431,7 +431,7 @@
       <county id="080702" name="达拉特" weatherCode="101080703"/>
       <county id="080703" name="准格尔" weatherCode="101080704"/>
       <county id="080704" name="鄂前旗" weatherCode="101080705"/>
-      <county id="080705" name="河南" weatherCode="101080706"/>
+      <county id="080705" name="河南自治县" weatherCode="101080706"/>
       <county id="080706" name="伊克乌素" weatherCode="101080707"/>
       <county id="080707" name="鄂托克" weatherCode="101080708"/>
       <county id="080708" name="杭锦旗" weatherCode="101080709"/>
@@ -1066,7 +1066,7 @@
     </city>
     <city id="1212" name="东营">
       <county id="121201" name="东营" weatherCode="101121201"/>
-      <county id="121202" name="河口" weatherCode="101121202"/>
+      <county id="121202" name="河口区" weatherCode="101121202"/>
       <county id="121203" name="垦利" weatherCode="101121203"/>
       <county id="121204" name="利津" weatherCode="101121204"/>
       <county id="121205" name="广饶" weatherCode="101121205"/>
@@ -1496,7 +1496,7 @@
       <county id="161103" name="永靖" weatherCode="101161103"/>
       <county id="161104" name="广河" weatherCode="101161104"/>
       <county id="161105" name="和政" weatherCode="101161105"/>
-      <county id="161106" name="东乡" weatherCode="101161106"/>
+      <county id="161106" name="东乡族" weatherCode="101161106"/>
       <county id="161107" name="积石山" weatherCode="101161107"/>
     </city>
     <city id="1612" name="甘南">
@@ -2721,7 +2721,7 @@
     </city>
     <city id="2712" name="内江">
       <county id="271201" name="内江" weatherCode="101271201"/>
-      <county id="271202" name="东兴" weatherCode="101271202"/>
+      <county id="271202" name="东兴区" weatherCode="101271202"/>
       <county id="271203" name="威远" weatherCode="101271203"/>
       <county id="271204" name="资中" weatherCode="101271204"/>
       <county id="271205" name="隆昌" weatherCode="101271205"/>
@@ -2786,7 +2786,7 @@
       <county id="271802" name="康定" weatherCode="101271802"/>
       <county id="271803" name="泸定" weatherCode="101271803"/>
       <county id="271804" name="丹巴" weatherCode="101271804"/>
-      <county id="271805" name="九龙" weatherCode="101271805"/>
+      <county id="271805" name="九龙县" weatherCode="101271805"/>
       <county id="271806" name="雅江" weatherCode="101271806"/>
       <county id="271807" name="道孚" weatherCode="101271807"/>
       <county id="271808" name="炉霍" weatherCode="101271808"/>
@@ -3028,7 +3028,7 @@
       <county id="290310" name="屏边" weatherCode="101290310"/>
       <county id="290311" name="泸西" weatherCode="101290311"/>
       <county id="290312" name="金平" weatherCode="101290312"/>
-      <county id="290313" name="河口" weatherCode="101290313"/>
+      <county id="290313" name="河口族" weatherCode="101290313"/>
     </city>
     <city id="2904" name="曲靖">
       <county id="290401" name="曲靖" weatherCode="101290401"/>
