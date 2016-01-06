@@ -7,6 +7,7 @@ import json
 import xml.etree.ElementTree as ET
 import cPickle
 import os.path
+from itertools import ifilterfalse
 
 # 以下link来自中华万年历抓包,哇哈哈...
 #http://wthrcdn.etouch.cn/weather_mini?city=北京
@@ -67,10 +68,34 @@ def handlefuture(futureweather):
 def handlepm25(pm25):
     print u'空气质量: %s, aqi = %s, pm25 = %s' % (pm25['quality'], pm25['aqi'], pm25['pm25'])
 
+
+def unique_everseen(iterable, key=None):
+    """Yield unique elements, preserving order.
+        >>> list(unique_everseen('AAAABBBCCDAABBB'))
+        ['A', 'B', 'C', 'D']
+        >>> list(unique_everseen('ABBCcAD', str.lower))
+        ['A', 'B', 'C', 'D']
+        refer to: https://github.com/erikrose/more-itertools/blob/master/more_itertools/recipes.py
+    """
+    seen = set()
+    seen_add = seen.add
+    if key is None:
+        for element in ifilterfalse(seen.__contains__, iterable):
+            seen_add(element)
+            yield element
+    else:
+        for element in iterable:
+            k = key(element)
+            if k not in seen:
+                seen_add(k)
+                yield element
+
+
 if __name__ == "__main__":
 
     weather_api = 'http://aider.meizu.com/app/weather/listWeather?'
-    params = sys.argv[1:]
+    # remove dups from argv
+    params = list(unique_everseen(sys.argv[1:]))
     paramsLen = len(params)
     if paramsLen == 0:
         # default to 杭州 if none supplied
@@ -85,6 +110,8 @@ if __name__ == "__main__":
         except KeyError:
             print 'cannot find city id for city = ' + name
     # print query
+    if len(query) == 0:
+        sys.exit(1)
     final_url = weather_api + urllib.urlencode(query)
     response = urllib2.urlopen(final_url)
     js = json.load(response)
