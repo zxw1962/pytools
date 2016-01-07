@@ -66,7 +66,7 @@ def handlefuture(futureweather):
 
 
 def handlepm25(pm25):
-    print u'空气质量: %s, aqi = %s, pm25 = %s' % (pm25['quality'], pm25['aqi'], pm25['pm25'])
+    print u'空气质量: %s, aqi = %s, pm2.5 = %s' % (pm25['quality'], pm25['aqi'], pm25['pm25'])
 
 
 def unique_everseen(iterable, key=None):
